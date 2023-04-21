@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Taller #3</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <table>
+        <tr>
+            <br><p></p>
+            <center><h3>Tarea4</h3></center>
+            <center><h3>Ingrese los numeros a calcular</h3></center>
+            <center><h3> Ingrese el primer numero : <input type="number" name="a" id="a" ></h3></center>
+            <center><h3> Ingrese el segundo numero: <input type="number" name="b" id="b" ></h3></center>  
+        </tr>
+    </table>
+    <p> <center><input type="button" value="CALCULAR SUMA" onclick="calcularSuma();"></center></p><br>
+    <p> <center><input type="button" value="CALCULAR RESTA" onclick="calcularResta();"></center></p><br>
+    <p> <center><input type="button" value="CALCULAR MULTIPLICACION" onclick="calcularMultiplicacion();"></center></p><br>
+    <p> <center><input type="button" value="CALCULAR DIVISON" onclick="calcularDivision();"></center></p><br>
+    <p> <center><input type="button" value="CALCULAR PORCENTAJE" onclick="calcularporcentaje();"></center></p><br>
+
+    <script>
+        function calcularSuma() {
+        var num1 = parseInt(document.getElementById("a"). value);
+        var num2 = parseInt(document.getElementById("b"). value);
+        var suma = (num1+num2);
+        alert("La suma es: "+suma);
+        }
+        function calcularResta() {
+        var num1 = parseInt(document.getElementById("a"). value);
+        var num2 = parseInt(document.getElementById("b"). value);
+        var resta = (num1-num2);
+        alert("La resta es: "+resta);
+        }
+        function calcularMultiplicacion() {
+        var num1 = parseInt(document.getElementById("a"). value);
+        var num2 = parseInt(document.getElementById("b"). value);
+        var multiplicacion = (num1*num2);
+        alert("La multiplicacion es: "+multiplicacion);
+        }
+        function calcularDivision() {
+        var num1 = parseInt(document.getElementById("a"). value);
+        var num2 = parseInt(document.getElementById("b"). value);
+        var division = (num1/num2);
+        alert("La division es: "+division);
+        }
+        function calcularporcentaje() {
+        var num1 = parseInt(document.getElementById("a"). value);
+        var num2 = parseInt(document.getElementById("b"). value);
+        var porcentaje = (num1+num2)/100;
+        alert("El porcentaje es: "+porcentaje);
+        }
+
+    </script>
+</body>
+</html>
